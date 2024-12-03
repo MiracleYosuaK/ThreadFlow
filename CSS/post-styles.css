@@ -1,0 +1,301 @@
+/* General Layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f6ff; /* Light blue background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #2a5298; /* Blue background */
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    color: #f0f6ff;
+    text-decoration: none;
+}
+
+.header-right {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    text-decoration: none;
+}
+
+.header-right .user-name a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.header-right .user-name a:hover {
+    background-color: #444;
+}
+
+/* Main Content */
+main {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Post Content */
+article {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #2a5298; /* Blue title */
+}
+
+.post-content {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+t{
+    color:#fff;
+}
+
+.post-content a {
+    color: #2a5298;
+    text-decoration: none;
+}
+
+.post-content a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #2a5298; /* Blue background */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* Comment Section */
+#comments {
+    margin-top: 30px;
+    border-top: 2px solid #ddd;
+    padding-top: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #3498db; /* Blue comments heading */
+    margin-bottom: 15px;
+}
+
+.comment-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comment-list li {
+    background-color: #f0f6ff; /* Light blue background */
+    border-left: 5px solid #2a5298;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.comment-list li strong {
+    color: #333;
+}
+
+/* Textarea (Comment Box) */
+textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #2a5298; /* Blue border */
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    resize: vertical;
+    min-height: 120px; /* Bigger comment box */
+}
+
+textarea:focus {
+    border-color: #2a5298; /* Darker blue on focus */
+}
+
+/* Button */
+button {
+    background-color: #2a5298;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2a5298;
+}
+
+/* Form */
+form {
+    margin-bottom: 20px;
+}
+
+form p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+form button {
+    background-color: #1e3c72;
+    border: none;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2a5298;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Post Meta Section */
+.post-meta {
+    display: flex;
+    justify-content: space-between; /* Distribute the space between the username and the date */
+    align-items: center;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.post-meta span {
+    font-size: 1em;
+}
+
+.post-date {
+    text-align: right;
+    color: #3498db; /* Blue color for the date */
+    font-size: 0.9em;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #3498db; /* Blue title */
+}
+
+.post-content {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+/* Comment Section */
+#comments {
+    margin-top: 30px;
+    border-top: 2px solid #ddd;
+    padding-top: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #3498db; /* Blue comments heading */
+    margin-bottom: 15px;
+}
+
+.comment-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comment-list li {
+    background-color: #f0f6ff; /* Light blue background */
+    border-left: 5px solid #3498db;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.comment-list li .comment-text {
+    flex: 1;
+    color: #333;
+}
+
+.comment-list li .comment-time {
+    color: #3498db; /* Blue color for date */
+    font-size: 0.9em;
+    text-align: right;
+}
+
+.comment-list li strong {
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #3498db; /* Blue border */
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    resize: vertical;
+    min-height: 120px; /* Bigger comment box */
+}
+
+textarea:focus {
+    border-color: #2980b9; /* Darker blue on focus */
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}

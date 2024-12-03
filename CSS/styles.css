@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #f5f5f5;
+    padding: 20px;
+}
+
+.login-container, .register-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    background: rgba(0, 0, 50, 0.75); /* Background semi-transparan */
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo img {
+    width: 200px;
+    margin-bottom: 1px;
+    margin-top: 50px;
+}
+
+.logo1 img {
+    width: 200px;
+    margin-bottom: 1px;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #cce7ff;
+}
+
+.login-box, .register-box {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input::placeholder {
+    color: #b3c2d1;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-left: 4px solid #4da6ff;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #4da6ff, #1e90ff);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #1e90ff, #4da6ff);
+}
+
+.extra-links {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.extra-links a {
+    color: #80c9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.extra-links a:hover {
+    color: #d1e0fc;
+}
+
+.register-container .logo img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.register-container h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.register-container .subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #b0c4de;
+}
+
+.register-container input {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    outline: none;
+}
+
+.register-container input::placeholder {
+    color: #b3c2d1;
+}
+
+.register-container button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #4da6ff, #1e90ff);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.register-container button:hover {
+    background: linear-gradient(135deg, #1e90ff, #4da6ff);
+}
+
+.register-container .extra-links {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.register-container .extra-links a {
+    color: #80c9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.register-container .extra-links a:hover {
+    color: #d1e0fc;
+}
+
+.forgot-password-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    background: rgba(0, 0, 50, 0.75);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.forgot-password-container .logo img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.forgot-password-container h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.forgot-password-container .subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #b0c4de;
+}
+
+.forgot-password-box {
+    margin-top: 20px;
+}
+
+.forgot-password-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.forgot-password-box input[type="email"] {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.forgot-password-box input::placeholder {
+    color: #b3c2d1;
+}
+
+.forgot-password-box input:focus {
+    background: rgba(255, 255, 0, 0.2);
+    border-left: 4px solid #4da6ff;
+}
+
+.forgot-password-box button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #4da6ff, #1e90ff);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+}
+
+.forgot-password-box button:hover {
+    background: linear-gradient(135deg, #1e90ff, #4da6ff);
+}
+
+.forgot-password-container .extra-links {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.forgot-password-container .extra-links a {
+    color: #80c9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgot-password-container .extra-links a:hover {
+    color: #d1e0fc;
+}
+
+.logout-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    background: rgba(0, 0, 50, 0.75);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+}
+
+.logout-container h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.logout-container p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #b0c4de;
+}
+
+.logout-container .logout-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #4da6ff, #1e90ff);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logout-container .logout-btn:hover {
+    background: linear-gradient(135deg, #1e90ff, #4da6ff);
+}
+
+.logout-container .extra-links {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logout-container .extra-links a {
+    color: #80c9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logout-container .extra-links a:hover {
+    color: #d1e0fc;
+}
